@@ -16,7 +16,7 @@
 </head>
 <body>
   <!-- ===== SEBASTIAN ===== -->
-  <header id="header" class="hero-section d-flex flex-column align-items-center text-center text-white position-relative" style="background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/Hackaton_1_Generation/img/Banner-Viajes.jpg') no-repeat center center/cover; min-height: 100vh;">
+  <header id="header" class="hero-section d-flex flex-column align-items-center text-center text-white position-relative" style="background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1610552050890-fe99536c2615?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHBhaXNhamUlMjBkZSUyMG1vbnRhJUMzJUIxYXxlbnwwfHwwfHx8MA%3D%3D') no-repeat center center/cover; min-height: 100vh;">
     <nav class="navbar navbar-expand-lg shadow-sm" data-bs-theme="dark">
       <div class="container-fluid">
         <div class="d-flex flex-column">
@@ -32,15 +32,15 @@
                   <a class="nav-link active" href="#">Inicio</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Paquetes Viajes</a>
+                  <a class="nav-link" href="#main">Paquetes Viajes</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Nosotros</a>
+                  <a class="nav-link" href="#footer">Nosotros</a>
                 </li>
               </ul>
               <div class="d-flex flex-column flex-lg-row gap-2 mt-3 mt-lg-0 align-items-center">
-                <button type="button" class="login btn btn-outline-secondary m-1 fw-bold" id="login">Login</button>
-                <button type="button" class="registro btn btn-primary m-1 fw-bold" id="registro">Registro</button>
+                <button type="button" class="login btn btn-outline-secondary m-1 fw-bold" data-bs-toggle="modal" data-bs-target="#loginModal" id="login">Login</button>
+                <button type="button" class="registro btn btn-primary m-1 fw-bold" data-bs-toggle="modal" data-bs-target="#registroModal" id="registro">Registro</button>
               </div>
               <div class="d-flex flex-column flex-lg-row mt-3 mt-lg-0 mx-5 align-items-center">
                 <button type="button" class="carroc btn btn-outline-secondary border-3"><i class="bi bi-cart fw-bold"></i></button>
@@ -53,8 +53,8 @@
                 <div class="col-md-10 col-lg-8">
                     <h1 class="display-3 fw-bold mb-3">Viajar es la única cosa que compras y te hace más rico.</h1>
                     <div class="d-sm-flex justify-content-sm-center gap-3" style="padding-top: 10%;">
-                        <a href="#" class="btnViajes btn btn-secondary btn-lg px-4 fw-bold text-white mb-2 mb-sm-0 shadow">Ver Paquetes Viajes</a>
-                        <a href="#" class="btnViajes btn btn-secondary btn-lg px-4 fw-bold text-white mb-2 mb-sm-0 shadow">Contactanos</a>
+                        <a href="#main" class="btnViajes btn btn-secondary btn-lg px-4 fw-bold text-white mb-2 mb-sm-0 shadow">Ver Paquetes Viajes</a>
+                        <a href="#footer" class="btnViajes btn btn-secondary btn-lg px-4 fw-bold text-white mb-2 mb-sm-0 shadow">Contactanos</a>
                     </div>
                   </div>                        
             </div>
@@ -70,7 +70,8 @@
   <div id="cart" class="cart hidden"></div>
   <!-- ===== JUAN SEBASTIAN ===== -->
   <div id="footer"></div>
-
+<div id="modalLogin"></div>
+<div id="modalRegistro"></div>
   <script src="js/packages.js"></script>
   <script src="js/header.js"></script>
   <script src="js/body.js"></script>

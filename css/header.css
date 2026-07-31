@@ -1,0 +1,72 @@
+/* ==========================================================
+   NAVBAR
+========================================================== */
+.registro{
+    background-color: #D9D9D9 !important;
+    color: #1B4E7A !important;
+    border-color: #D9D9D9 !important;
+    width: 160px;
+}
+.login{
+    background-color: transparent;
+    border-color: #D9D9D9 !important;
+    color: #D9D9D9 !important;
+    width: 160px;
+}
+.carroc{
+    width: 80px;
+    border-color: #D9D9D9 !important;
+    color: #D9D9D9 !important;
+}
+
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+a.nav-link {
+    position: relative;
+    display: inline-block !important;
+    color: var(--color-white) !important;
+    transition: color .3s ease;
+}
+
+a.nav-link:hover {
+    color: var(--bs-secondary)!important;
+    font-weight: bolder;
+}
+
+a.nav-link.active {
+    color: var(--bs-secondary) !important;
+    font-weight: bold;
+}
+
+a.nav-link::after {
+    content: "";
+    position: absolute;
+
+    left: 75%;
+    bottom: 0;
+
+    width: 0;
+    height: 1px;
+
+    transform: translateX(-75%);
+    transition: width .3s ease-in-out;
+
+    background-color: var(--bs-secondary);
+    border-radius: 2px;
+}
+
+a.nav-link:hover::after,
+a.nav-link.active::after {
+    width: 75%;
+}
+
+.btnViajes{
+    background-color: rgb(98, 75, 230)!important;
+}

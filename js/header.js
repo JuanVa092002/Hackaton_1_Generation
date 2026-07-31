@@ -34,7 +34,7 @@ const modalLogin = `<!-- Modal de Login -->
           </div>
 
           <!-- Botón de Envío -->
-          <button type="button" class="registro btn btn-primary w-100 fw-bold py-2 shadow-sm">Ingresar</button>
+          <button type="submit" class="registro btn btn-primary w-100 fw-bold py-2 shadow-sm">Ingresar</button>
 
         </form>
       </div>
@@ -107,3 +107,41 @@ const modalRegistro = `<!-- Modal de Registro -->
 </div>`
 
 document.getElementById('modalRegistro').innerHTML= modalRegistro;
+
+const formLogin = document.getElementById("formLogin");
+if (formLogin) {
+  formLogin.addEventListener("submit", function (e) {
+    e.preventDefault();
+    const email = document.getElementById("inputUsuario").value.trim();
+    const password = document.getElementById("inputPassword").value;
+
+    if (!email || !password) {
+      Alerta.advertencia("Completa tu email y contraseña.");
+      return;
+    }
+
+    Alerta.exito("Sesión iniciada correctamente.", "¡Bienvenido!");
+    const modal = bootstrap.Modal.getInstance(document.getElementById("loginModal"));
+    if (modal) modal.hide();
+    formLogin.reset();
+  });
+}
+
+const formRegistro = document.getElementById("formRegistro");
+if (formRegistro) {
+  formRegistro.addEventListener("submit", function (e) {
+    e.preventDefault();
+    const password = document.getElementById("regPassword").value;
+    const confirmPassword = document.getElementById("regConfirmPassword").value;
+
+    if (password !== confirmPassword) {
+      Alerta.error("Las contraseñas no coinciden.");
+      return;
+    }
+
+    Alerta.exito("Tu cuenta fue creada correctamente.", "¡Registro exitoso!");
+    const modal = bootstrap.Modal.getInstance(document.getElementById("registroModal"));
+    if (modal) modal.hide();
+    formRegistro.reset();
+  });
+}

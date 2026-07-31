@@ -53,6 +53,7 @@ function abrirModalPaquete(id) {
       this.textContent = "Agregar al carrito";
       this.disabled = false;
     }.bind(this), 2000);
+    if (instanciaModal) instanciaModal.hide();
   };
 
   if (!instanciaModal) iniciarModal();

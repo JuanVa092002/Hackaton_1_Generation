@@ -4,7 +4,7 @@ const paquetes = [
     nombre: "Hallstatt",
     precio: 88952,
     dias: "3 Días / 4 Noches",
-    imagen: "https://images.unsplash.com/photo-1597086831879-756db15e81d3?q=80&w=1548&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    imagen: "img/Hallstatt.jpg"
   },
   {
     id: 2,
@@ -18,6 +18,6 @@ const paquetes = [
     nombre: "Roma",
     precio: 95000,
     dias: "4 Días / 5 Noches",
-    imagen: "https://images.unsplash.com/photo-1552832230-c0197dd311b5?q=80&w=1592&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    imagen: "img/Roma.jpg"
   }
 ];

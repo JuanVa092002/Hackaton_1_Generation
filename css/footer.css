@@ -1,0 +1,37 @@
+footer{
+    background-color: black;
+    padding: 5%;
+    justify-content: center;
+    text-align: center;
+    color: aliceblue;
+}
+
+div{
+    color: aliceblue;
+}
+
+h6{
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 25px;
+    text-align: left !important;
+    color: aliceblue;
+
+}
+.columna{
+    column-count: 4;
+    column-gap: 20px;
+}
+#copyright{
+    position: fixed;
+    right: 0;
+    padding: 45px;
+    text-align: right !important;
+    color: aliceblue;
+}
+
+.redes{
+    left: 0;
+    bottom: 0;
+}

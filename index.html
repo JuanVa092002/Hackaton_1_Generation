@@ -16,7 +16,7 @@
 </head>
 <body>
   <!-- ===== SEBASTIAN ===== -->
-  <header id="header" class="hero-section d-flex flex-column align-items-center text-center text-white position-relative" style="background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/Hackaton_1_Generation/img/Banner-Viajes.jpg') no-repeat center center/cover; min-height: 100vh;">
+  <header id="header" class="hero-section d-flex flex-column align-items-center text-center text-white position-relative" style="background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../Hackatons/img/Banner-Viajes.jpg') no-repeat center center/cover; min-height: 100vh;">
     <nav class="navbar navbar-expand-lg shadow-sm" data-bs-theme="dark">
       <div class="container-fluid">
         <div class="d-flex flex-column">
@@ -56,27 +56,29 @@
                         <a href="#" class="btnViajes btn btn-secondary btn-lg px-4 fw-bold text-white mb-2 mb-sm-0 shadow">Ver Paquetes Viajes</a>
                         <a href="#" class="btnViajes btn btn-secondary btn-lg px-4 fw-bold text-white mb-2 mb-sm-0 shadow">Contactanos</a>
                     </div>
-                  </div>                        
+                  </div>
             </div>
-        </div>       
+        </div>
   </header>
   <!-- ===== CESAR ===== -->
   <main id="main"></main>
-  <div id="modal"></div>
-<div id="cart"></div>
   <!-- ===== JUAN CARLOS ===== -->
-  <div id="modal" class="modal hidden"></div>
-  <!-- ===== THOMAS ===== -->
-  <div id="cart" class="cart hidden"></div>
+  <div class="modal fade modal-viaje" id="packageModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content" id="packageModalContent"></div>
+    </div>
+  </div>
+  <div class="toast-container position-fixed bottom-0 end-0 p-3" id="toastContainer"></div>
   <!-- ===== JUAN SEBASTIAN ===== -->
+  <div id="cart"></div>
+  <!-- ===== THOMAS ===== -->
   <div id="footer"></div>
-
   <script src="js/packages.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
   <script src="js/header.js"></script>
   <script src="js/body.js"></script>
-  <script src="js/modal.js"></script>
   <script src="js/cart.js"></script>
+  <script src="js/modal.js"></script>
   <script src="js/footer.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>

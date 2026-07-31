@@ -8,19 +8,24 @@ function agregarCarrito(id) {
 
     localStorage.setItem("carrito", JSON.stringify(carrito));
 
-    alert(`${paquete.nombre} agregado al carrito`);
+    const contenedor = document.getElementById("toastContainer");
+    if (contenedor) {
+        contenedor.innerHTML = `
+            <div class="toast modal-mensaje show" role="alert">
+                <div class="toast-body">✓ ${paquete.nombre} agregado al carrito</div>
+            </div>
+        `;
+        setTimeout(function () {
+            contenedor.innerHTML = "";
+        }, 2500);
+    } else {
+        alert(`${paquete.nombre} agregado al carrito`);
+    }
 }
 
 
 function verDetalle(id) {
-
-const paquete = paquetes.find(p => p.id === id);
-
-    alert(`
-Destino: ${paquete.nombre}
-Duración: ${paquete.dias}
-Precio: $${paquete.precio.toLocaleString()}
-    `);
+    abrirModalPaquete(id);
 }
 
 

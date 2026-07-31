@@ -1,0 +1,172 @@
+/* Modal de paquetes — Juan Carlos */
+
+.modal-viaje .modal-dialog {
+  max-width: 420px;
+  margin: 1rem auto;
+}
+
+.modal-viaje .modal-content {
+  display: flex;
+  flex-direction: column;
+  max-height: 90vh;
+  border: none;
+  border-radius: 14px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.18);
+}
+
+.modal-scroll {
+  overflow-y: auto;
+}
+
+.modal-imagen-contenedor {
+  position: relative;
+  height: 160px;
+}
+
+.modal-imagen {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.modal-cerrar {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 32px;
+  height: 32px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.95);
+  font-size: 14px;
+  line-height: 1;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+}
+
+.modal-cuerpo {
+  padding: 16px 18px 14px;
+}
+
+.modal-titulo {
+  margin: 0 0 6px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #1a1a1a;
+  line-height: 1.2;
+}
+
+.modal-duracion {
+  display: inline-block;
+  margin: 0 0 14px;
+  padding: 4px 10px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #2b6cb0;
+  background: #eef4fb;
+  border-radius: 20px;
+}
+
+.modal-seccion {
+  padding: 12px 14px;
+  background: #f8f9fa;
+  border-radius: 10px;
+}
+
+.modal-seccion-titulo {
+  margin: 0 0 8px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.modal-lista {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.modal-lista li {
+  font-size: 13px;
+  color: #555;
+  margin-bottom: 5px;
+  line-height: 1.35;
+}
+
+.modal-lista li:last-child {
+  margin-bottom: 0;
+}
+
+.modal-pie {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 18px;
+  border-top: 1px solid #eee;
+  background: #fff;
+}
+
+.modal-precio-actual {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+  color: #1a1a1a;
+  line-height: 1.1;
+}
+
+.modal-precio-texto {
+  margin: 2px 0 0;
+  font-size: 11px;
+  color: #999;
+}
+
+.modal-boton {
+  padding: 10px 18px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  background: #2b6cb0;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.15s ease;
+}
+
+.modal-boton:hover {
+  background: #1e4f8a;
+}
+
+.modal-boton:disabled {
+  background: #2d8a4e;
+}
+
+.modal-mensaje {
+  background: #fff !important;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 480px) {
+  .modal-viaje .modal-dialog {
+    margin: 0.75rem;
+    max-width: calc(100% - 1.5rem);
+  }
+
+  .modal-imagen-contenedor {
+    height: 140px;
+  }
+
+  .modal-pie {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .modal-boton {
+    width: 100%;
+    text-align: center;
+  }
+}

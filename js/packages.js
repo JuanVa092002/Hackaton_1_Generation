@@ -8,10 +8,10 @@ const paquetes = [
   },
   {
     id: 2,
-    nombre: "París",
+    nombre: "Peru",
     precio: 120000,
     dias: "5 Días / 6 Noches",
-    imagen: "https://plus.unsplash.com/premium_photo-1661919210043-fd847a58522d?q=80&w=1742&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    imagen: "img/peru.jpg"
   },
   {
     id: 3,
